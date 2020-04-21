@@ -1,1 +1,1 @@
-web: gunicorn clonechat.wsgi --log-file
+web: daphne clonechat.asgi:application --port $port --bind 0.0.0.0
